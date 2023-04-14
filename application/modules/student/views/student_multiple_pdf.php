@@ -104,13 +104,7 @@
           <td>:</td>
           <td><?php echo $row['class_name'] ?></td>
         </tr>
-         <?php if(majors()=='senior'){ ?>
-        <tr>
-          <td>Program Keahlian</td>
-          <td>:</td>
-          <td><?php echo $row['majors_name'] ?></td>
-        </tr>
-        <?php } ?>
+        
       </table>
 
       <br>
