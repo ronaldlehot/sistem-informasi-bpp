@@ -17,6 +17,8 @@
 				<div class="box">
 					<div class="box-header">
 						<button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#addClass"><i class="fa fa-plus"></i> Tambah</button>
+						<!-- RESET	 -->
+						<a  href="<?php echo site_url('manage/class') ?>" class="btn btn-primary btn-sm "><i class="fa fa-refresh" > </i> Reset Pencarian </a>	
 
 						<div class="box-tools">
 							<?php echo form_open(current_url(), array('class' => 'form-horizontal', 'method' => 'get')) ?>
@@ -35,7 +37,8 @@
 							<tr>
 								<th>No</th>
 								<th>Nama Kelas</th>
-								<th>ID Kelas</th>
+								<!-- <th>ID Kelas</th> -->
+								<!-- <th> wali kelas</th> -->
 								<th>Aksi</th>
 							</tr>
 							<tbody>
@@ -47,7 +50,8 @@
 										<tr>
 											<td><?php echo $i; ?></td>
 											<td><?php echo $row['class_name']; ?></td>
-											<td><?php echo $row['class_id']; ?></td>
+											<!-- <td><?php echo $row['class_id']; ?></td> -->
+											<!-- <td><?php echo $row['wali_kelas']; ?></td> -->
 											<td>
 												<a href="<?php echo site_url('manage/class/edit/' . $row['class_id']) ?>" class="btn btn-xs btn-warning" data-toggle="tooltip" title="Edit"><i class="fa fa-edit"></i></a>
 												
@@ -100,6 +104,8 @@
 			</section>
 			<!-- /.content -->
 		</div>
+
+		
 
 		<!-- Modal -->
 		<div class="modal fade" id="addClass" role="dialog">

@@ -40,7 +40,7 @@
 									</select>
 								</div>
 							</div>
-							<?php if(majors() == 'senior') { ?>
+							<!-- <?php if(majors() == 'senior') { ?>
 							<div class="col-md-3">  
 								<div class="form-group">
 									<label>Program Keahlian</label>
@@ -51,7 +51,7 @@
 									</select>
 								</div>
 							</div>
-							<?php } ?>
+							<?php } ?> -->
 							<div class="col-md-3">
 							<div style="margin-top:25px;">
 							<button type="submit" class="btn btn-primary">Filter</button>

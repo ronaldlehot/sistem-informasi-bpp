@@ -96,7 +96,7 @@
       
     </div>
     <div style="margin-bottom: 50px;"></div>
-
-  </section>
+   
   <!-- /.content -->
 </div>
+

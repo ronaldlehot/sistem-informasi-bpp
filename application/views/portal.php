@@ -37,8 +37,8 @@
 		<div class="container text-center">
 			<div class="row">
 				<div class="col-md-12">
-					<h3 style="color:white;" alt="SISTEM INFORMASI PEMBAYARAN BPP" class="display-4" > SISTEM INFORMASI PEMBAYARAN BPP </h3>
-					<p class="lead mb-5 colr"><h1 style="color:white;"><strong>SMAN 5 KOTA KUPANG</strong></h1></p>
+					<h3 style="color:white;" alt="SISTEM INFORMASI PEMBAYARAN BPP" class="rubah1" > SISTEM INFORMASI PEMBAYARAN BPP </h3>
+					<p class="rubah2 "><h1 style="color:white;"><strong>SMAN 5 KOTA KUPANG</strong></h1></p>
 				</div>	
 				
 				<div class="col-md-4">
@@ -72,17 +72,8 @@
 		</div>
 	</section>
 
-	<script>
-      gsap.registerPlugin(TextPlugin);
-      gsap.to(".display-4", { duration: 2, delay: 1.5, text: "Sistem Informasi Pembayaran BPP" });
-      gsap.to(".lead", { duration: 2, delay: 2.5, text: "Sistem Informasi Pembayaran BPP" });
-    </script>
+	
 
-
-	 <!-- GSAP -->
-	 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
-    <!-- plugin -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/TextPlugin.min.js"></script>
 </body>
 
 </html>

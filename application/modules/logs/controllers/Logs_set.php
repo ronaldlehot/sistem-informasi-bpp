@@ -25,7 +25,7 @@ class Logs_set extends CI_Controller {
         
         $params = array();
         $paramsPage = $params;
-        $params['limit'] = 5;
+        $params['limit'] = 10;
         $params['offset'] = $offset;
         $data['logs'] = $this->Logs_model->get($params);
         
@@ -36,7 +36,7 @@ class Logs_set extends CI_Controller {
         $config['total_rows'] = count($this->Logs_model->get($paramsPage));
         $this->pagination->initialize($config);
 
-        $data['title'] = 'Log Aktifitas';
+        $data['title'] = 'Log Aktivitas Pengguna';
         $data['main'] = 'logs/log_list';
         $this->load->view('manage/layout', $data);
     }

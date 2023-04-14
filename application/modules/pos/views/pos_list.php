@@ -16,7 +16,7 @@
 			<div class="col-md-12">
 				<div class="box">
 					<div class="box-header">
-						<button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#addPos"><i class="fa fa-plus"></i> Tambah</button>
+						<!-- <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#addPos"><i class="fa fa-plus"></i> Tambah</button> -->
 
 						<div class="box-tools">
 							<?php echo form_open(current_url(), array('class' => 'form-horizontal', 'method' => 'get')) ?>

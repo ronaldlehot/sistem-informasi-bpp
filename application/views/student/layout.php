@@ -117,6 +117,10 @@
     <?php isset($main) ? $this->load->view($main) : null; ?>
     <!-- Content Wrapper. Contains page content -->
 
+ 
+
+
+
     
     <!-- /.content-wrapper -->
     <footer class="main-footer hidden-xs">
@@ -162,8 +166,12 @@
     </div>
       </div>
 
+         
+  
     </div>
 
+
+    
     <!-- jQuery 3 -->
 
     

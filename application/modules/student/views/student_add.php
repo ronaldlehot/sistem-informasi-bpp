@@ -138,7 +138,7 @@ if (isset($student)) {
 										<label>NISN <small data-toggle="tooltip" title="Wajib diisi">*</small></label>
 										<input name="student_nisn" type="text" class="form-control" value="<?php echo $inputNisNValue ?>" placeholder="NISN Siswa">
 									</div>
-									<?php if ($setting_level['setting_value']=='senior') { ?>
+									<!-- <?php if ($setting_level['setting_value']=='senior') { ?>
 										<div class="form-group">
 											<label>Program Keahlian <small data-toggle="tooltip" title="Wajib diisi">*</small></label>
 											<select name="majors_majors_id" class="form-control">
@@ -148,7 +148,7 @@ if (isset($student)) {
 												<?php endforeach ?>
 											</select>
 										</div> 
-									<?php } ?>
+									<?php } ?> -->
 									<div ng-controller="classCtrl">
 										<div class="form-group"> 
 											<label >Kelas *</label>

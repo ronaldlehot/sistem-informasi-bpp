@@ -19,7 +19,7 @@
           <div class="">
             <div class="form-group label-floating">
               <label class="control-label">Tingkat Sekolah</label>
-              <select name="setting_level" class="form-control">
+              <select  name="setting_level" class="form-control">
                 <option value="primary" <?php echo ($setting_level['setting_value'] == 'primary') ? 'selected' : '' ?>>SD/MI</option>
                 <option value="junior" <?php echo ($setting_level['setting_value'] == 'junior') ? 'selected' : '' ?>>SMP/MTS</option>
                 <option value="senior" <?php echo ($setting_level['setting_value'] == 'senior') ? 'selected' : '' ?>>SMK/SMA/SMU/MA</option>
@@ -96,7 +96,7 @@
           <p>Ukuran Logo 50x50 pixel</p>
         </div>
       </div>
-      <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#gateway"><i class="fa fa-arrow-down"></i> Set SMS Gateway</button>
+      <!-- <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#gateway"><i class="fa fa-arrow-down"></i> Set SMS Gateway</button> -->
       <div id="gateway" class="collapse">
         <div class="form-group label-floating">
           <label class="control-label">User SMS Gateway</label>

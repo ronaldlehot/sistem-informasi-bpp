@@ -16,7 +16,8 @@
 				<div class="box">
 					<div class="box-header">
 						<a href="<?php echo site_url('manage/period/add') ?>" class="btn btn-sm btn-success"><i class="fa fa-plus"></i> Tambah</a>
-
+						<!-- RESET	 -->
+						<a  href="<?php echo site_url('manage/period') ?>" class="btn btn-primary btn-sm"><i class="fa fa-refresh" > </i> Reset Pencarian</a>	
 						<div class="box-tools">
 							<?php echo form_open(current_url(), array('class' => 'form-horizontal', 'method' => 'get')) ?>
 							<div class="input-group input-group-sm" style="width: 250px;">

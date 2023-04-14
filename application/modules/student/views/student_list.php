@@ -18,6 +18,8 @@
 						<?php if ($this->session->userdata('uroleid') != USER) { ?>
 						<a href="<?php echo site_url('manage/student/add') ?>" class="btn btn-sm btn-success"><i class="fa fa-plus"></i> Tambah</a>
 						<a href="<?php echo site_url('manage/student/import') ?>" class="btn btn-sm btn-info"><i class="fa fa-upload"></i> Upload Siswa</a>
+									<!-- RESET	 -->
+									<a style="margin-left: 7%;" href="<?php echo site_url('manage/student') ?>" class="btn btn-primary btn-sm"><i class="fa fa-refresh" > </i> Reset Pencarian</a>	
 						<?php } ?>
 
 						<div class="box-tools">
@@ -36,6 +38,7 @@
 								<button type="submit" class="btn btn-danger btn-sm" formtarget="_blank"><span class="fa fa-print"></span> Cetak</button>
 							</div>
 						</div>
+						
 						<!-- /.box-header -->
 						<div class="box-body table-responsive">
 							<table class="table table-hover">

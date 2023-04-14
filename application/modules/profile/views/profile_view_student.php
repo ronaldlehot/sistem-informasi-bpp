@@ -91,13 +91,13 @@
 												<td>:</td>
 												<td><?php echo $student['class_name'] ?></td>
 											</tr>
-											<?php if(majors()=='senior') { ?>
+											<!-- <?php if(majors()=='senior') { ?>
 											<tr>
 												<td>Program Keahlian</td>
 												<td>:</td>
 												<td><?php echo $student['majors_name'] ?></td>
 											</tr>
-											<?php } ?>
+											<?php } ?> -->
 										</tbody>
 									</table>
 								</div>

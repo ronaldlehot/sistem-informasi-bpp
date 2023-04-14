@@ -47,11 +47,11 @@
               <a href="<?php echo site_url('manage/class') ?>"><i class="fa  <?php echo ($this->uri->segment(2) == 'class') ? 'fa-dot-circle-o' : 'fa-circle-o' ?>"></i> Kelas</a>
             </li>
 
-            <?php if (majors() == 'senior') { ?>
+            <!-- <?php if (majors() == 'senior') { ?>
             <li class="<?php echo ($this->uri->segment(2) == 'majors') ? 'active' : '' ?> ">
               <a href="<?php echo site_url('manage/majors') ?>"><i class="fa  <?php echo ($this->uri->segment(2) == 'majors') ? 'fa-dot-circle-o' : 'fa-circle-o' ?>"></i> Program Keahlian</a>
             </li>
-            <?php } ?>
+            <?php } ?> -->
 
             <li class="<?php echo ($this->uri->segment(2) == 'student' AND $this->uri->segment(3) != 'pass' AND $this->uri->segment(3) != 'upgrade') ? 'active' : '' ?> ">
               <a href="<?php echo site_url('manage/student') ?>"><i class="fa  <?php echo ($this->uri->segment(2) == 'student' AND $this->uri->segment(3) != 'pass' AND $this->uri->segment(3) != 'upgrade') ? 'fa-dot-circle-o' : 'fa-circle-o' ?>"></i> Siswa</a>
@@ -150,6 +150,7 @@
             <span class="pull-right-container"></span>
           </a>
         </li>
+        
 
         <!-- PENGATURAN-->
         <li class="<?php echo ($this->uri->segment(2) == 'setting' OR $this->uri->segment(2) == 'month') ? 'active' : '' ?> treeview">
@@ -170,24 +171,29 @@
         </li>
 
 
-       
-        <!-- tambah role -->
-        <li class="<?php echo ($this->uri->segment(2) == 'users') ? 'active' : '' ?>">
-          <a href="<?php echo site_url('manage/users'); ?>">
-            <i class="fa fa-user"></i> <span>Manajemen Pengguna</span>
-            <span class="pull-right-container"></span>
+
+
+         <!-- pengguna-->
+         <li class="<?php echo ($this->uri->segment(2) == 'users' OR $this->uri->segment(2) == 'logs') ? 'active' : '' ?> treeview">
+          <a href="#">
+            <i class="fa fa-archive"></i> <span>Manajemen Pengguna</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
           </a>
+          <ul class="treeview-menu">
+            <li class="<?php echo ($this->uri->segment(2) == 'users') ? 'active' : '' ?> ">
+              <a href="<?php echo site_url('manage/users') ?>"><i class="fa  <?php echo ($this->uri->segment(2) == 'users') ? 'fa-dot-circle-o' : 'fa-circle-o' ?>"></i> Tambah Role</a>
+            </li>
+            <li class="<?php echo ($this->uri->segment(2) == 'logs') ? 'active' : '' ?> ">
+              <a href="<?php echo site_url('manage/logs') ?>"><i class="fa  <?php echo ($this->uri->segment(2) == 'logs') ? 'fa-dot-circle-o' : 'fa-circle-o' ?>"></i> Aktivitas Pengguna</a>
+            </li>
+          </ul>
         </li>
 
-
+     
+         
         
-        <!-- log pengguna -->
-        <li class="<?php echo ($this->uri->segment(2) == 'logs') ? 'active' : '' ?>">
-          <a href="<?php echo site_url('manage/logs'); ?>">
-            <i class="fa fa-archive"></i> <span>Aktivitas Pengguna</span>
-            <span class="pull-right-container"></span>
-          </a>
-        </li>
         
       
         <!-- backupd database -->

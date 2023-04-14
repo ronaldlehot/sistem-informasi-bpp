@@ -119,23 +119,23 @@ if (isset($student)) {
 								<div class="tab-pane" id="tab_2">
 									<div class="form-group">
 										<label>NIS <small data-toggle="tooltip" title="Wajib diisi">*</small></label>
-										<input readonly="" type="text" class="form-control" value="<?php echo $inputNisValue ?>">
+										<input readonly type="text" class="form-control" value="<?php echo $inputNisValue ?>">
 									</div> 
 
 									<div class="form-group">
 										<label>NISN <small data-toggle="tooltip" title="Wajib diisi">*</small></label>
-										<input readonly="" type="text" class="form-control" value="<?php echo $inputNisNValue ?>">
+										<input readonly type="text" class="form-control" value="<?php echo $inputNisNValue ?>">
 									</div>
-									<?php if (majors()== 'senior') { ?>
+									<!-- <?php if (majors()== 'senior') { ?>
 									<div class="form-group">
 										<label>Program Keahlian <small data-toggle="tooltip" title="Wajib diisi">*</small></label>
 										<input readonly="" type="text" class="form-control" value="<?php echo $student['majors_name'] ?>">
 									</div> 
-									<?php } ?>
+									<?php } ?> -->
 
 									<div class="form-group"> 
 										<label >Kelas *</label>
-										<input readonly="" type="text" class="form-control" value="<?php echo $student['class_name'] ?>">
+										<input readonly type="text" class="form-control" value="<?php echo $student['class_name'] ?>">
 									</div>
 									
 								</div>

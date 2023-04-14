@@ -33,7 +33,7 @@
 									<?php endforeach; ?>
 								</select>
 							</div>
-							<?php if(majors() == 'senior') { ?>
+							<!-- <?php if(majors() == 'senior') { ?>
 							<label for="" class="col-sm-2 control-label">Program Keahlian</label>
 							<div class="col-sm-2">
 								<select class="form-control" name="k">
@@ -43,7 +43,7 @@
 									<?php endforeach; ?>
 								</select>
 							</div>
-							<?php } ?>
+							<?php } ?> -->
 							<div class="col-sm-2">
 								<button type="submit" class="btn btn-success">Cari / Tampilkan</button>
 							</div>
@@ -53,9 +53,9 @@
 					<label for="" class="col-sm-2">Setting Tarif</label>
 					<div class="col-sm-10">
 						<a class="btn btn-primary btn-sm" href="<?php echo site_url('manage/payment/add_payment_bulan/' . $payment['payment_id']) ?>"><span class="glyphicon glyphicon-plus"></span> Berdasarkan Kelas</a>
-						<?php if (majors() == 'senior') { ?>
+						<!-- <?php if (majors() == 'senior') { ?>
 						<a class="btn btn-warning btn-sm" href="<?php echo site_url('manage/payment/add_payment_bulan_majors/' . $payment['payment_id']) ?>"><span class="glyphicon glyphicon-plus"></span> Berdasarkan Program Keahlian</a>
-						<?php } ?>
+						<?php } ?> -->
 						<a class="btn btn-info btn-sm" href="<?php echo site_url('manage/payment/add_payment_bulan_student/' . $payment['payment_id']) ?>"><span class="glyphicon glyphicon-plus"></span> Berdasarkan Siswa</a>
 						
 						<a class="btn btn-default btn-sm" href="<?php echo site_url('manage/payment') ?>"><span class="glyphicon glyphicon-repeat"></span> Kembali</a>
@@ -72,9 +72,9 @@
 							<th>NIS</th>
 							<th>Nama</th>
 							<th>Kelas</th>
-							<?php if (majors() == 'senior') : ?>
+							<!-- <?php if (majors() == 'senior') : ?>
 								<th>Program</th>
-							<?php endif ?>
+							<?php endif ?> -->
 							<th>Aksi</th>
 						</tr>
 						<tbody>
@@ -87,9 +87,9 @@
 									<td><?php echo $row['student_nis']; ?></td>
 									<td><?php echo $row['student_full_name']; ?></td>
 									<td><?php echo $row['class_name']; ?></td>
-									<?php if (majors() == 'senior') : ?>
+									<!-- <?php if (majors() == 'senior') : ?>
 										<td><?php echo $row['majors_name']; ?></td>
-									<?php endif ?>
+									<?php endif ?> -->
 									<td>
 										<a href="<?php echo site_url('manage/payment/edit_payment_bulan/'. $row['payment_payment_id'].'/'.$row['student_student_id']) ?>" class="btn btn-xs btn-warning" data-toggle="tooltip" title="Ubah Tarif"><i class="fa fa-edit"></i></a>
 

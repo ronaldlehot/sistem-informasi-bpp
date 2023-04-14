@@ -32,25 +32,29 @@
 						<table class="table table-hover">
 							<tr>
 								<th>No</th>
-								<th>Tanggal</th>
-								<th>Modul</th>
-								<th>Aksi</th>
-								<th>Info</th>
-								<th>Penulis</th>
+								<th>log id</th>
+								<th>bulan id</th>
+								<th>bebas id </th>
+								<th>studend it</th>
+								<th>start update</th>
+								<th>last update</th>
+
+								<!-- <th>Penulis</th> -->
 							</tr>
 							<tbody>
 								<?php
-								if (!empty($logs)) {
+								if (!empty($ltrx)) {
 									$i = 1;
-									foreach ($logs as $row):
+									foreach ($ltrx as $row):
 										?>
 										<tr>
 											<td><?php echo $i; ?></td>
-											<td><?php echo pretty_date($row['log_date'],'d M Y h:m:s',false) ?></td>
 											<td><?php echo $row['log_trx_id']; ?></td>
 											<td><?php echo $row['bulan_bulan_id']; ?></td>
 											<td><?php echo $row['bebas_pay_bebas_pay_id']; ?></td>
 											<td><?php echo $row['student_student_id']; ?></td>	
+											<td><?php echo $row['log_trx_input_date']; ?></td>
+											<td><?php echo $row['log_trx_last_update']; ?></td>
 										</tr>
 										<?php
 										$i++;

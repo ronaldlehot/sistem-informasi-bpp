@@ -51,7 +51,7 @@
         <?php } ?>
       </div>
       <p  style="animation: float 3s linear infinite;" class="merk"><span style="color: #2ABB9B">SISTEM INFORMASI PEMBAYARAN BPP</span> </p> 
-      <?php if (isset($setting_school) AND $setting_school['setting_value'] == '-') { ?>
+      <?php if (isset($setting_school) ) { ?>
       <p  style="animation: float 3s linear infinite;" class="school">Sistem Informasi Pembayaran BPP</p> 
       <?php } else { ?>
       <p class="school"><?php echo $setting_school['setting_value'] ?></p> 

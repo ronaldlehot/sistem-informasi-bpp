@@ -34,6 +34,10 @@ class Class_set extends CI_Controller {
       $params['class_name'] = $f['n'];
     }
 
+    // if (isset($f['n']) && !empty($f['n']) && $f['n'] != '') {
+    //   $params['wali_kelas'] = $f['n'];
+    // }
+
     $paramsPage = $params;
     $params['limit'] = 10;
     $params['offset'] = $offset;
@@ -53,8 +57,8 @@ class Class_set extends CI_Controller {
 
   public function add_glob(){
     if ($_POST == TRUE) {
-      $className = $_POST['class_name'];
-      $cpt = count($_POST['class_name']);
+      $className = $_POST['classlas_name'];
+      $cpt = count($_POST['cs_name']);
       for ($i = 0; $i < $cpt; $i++) {
         $params['class_name'] = $className[$i];
 
@@ -63,7 +67,10 @@ class Class_set extends CI_Controller {
     }
     $this->session->set_flashdata('success',' Tambah Kelas Berhasil');
     redirect('manage/class');
+   
   }
+
+  
 
 // Add User_customer and Update
   public function add($id = NULL) {
@@ -74,7 +81,7 @@ class Class_set extends CI_Controller {
 
     if ($_POST AND $this->form_validation->run() == TRUE) {
 
-      if ($this->input->post('class_id')) {
+      if ($this->input->post('class_name')) {
         $params['class_id'] = $this->input->post('class_id');
       }
       $params['class_name'] = $this->input->post('class_name');

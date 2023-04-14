@@ -96,7 +96,7 @@
 											'<td>'.$row['class_name'].'</td>' : '' ?> 
 										<?php endforeach; ?>
 									</tr>
-									<?php if (majors() == 'senior') { ?>
+									<!-- <?php if (majors() == 'senior') { ?>
 										<tr>
 											<td>Program Keahlian</td>
 											<td>:</td>
@@ -105,7 +105,7 @@
 												'<td>'.$row['majors_name'].'</td>' : '' ?> 
 											<?php endforeach; ?>
 										</tr>
-									<?php } ?>
+									<?php } ?> -->
 								</tbody>
 							</table>
 						</div>
